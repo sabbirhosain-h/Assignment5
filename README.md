@@ -13,7 +13,7 @@
      parent element had and goes on.
 
 ## What is Event Delegation in JavaScript? Why is it useful?
-=>
+=> Attaching a single event listener to the parent element instead of attaching child elements
 
 ## What is the difference between preventDefault() and stopPropagation() methods?
 => Two separate JavaScript methods for controlling event behavior are preventDefault() and stopPropagation(), although they have different uses. 
