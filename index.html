@@ -26,15 +26,15 @@
 
         <div class="flex flex-row justify-between items-center px-10 sm:w-auto">
             <div class="h-[52px] w-[125px] sm:h-[48px] sm:w-[110px] flex flex-row justify-center items-center bg-[#41ff6b1a] rounded-3xl">
-                <span class="font-extrabold">0</span>
-                <img id="totalHeart" src="./assets/heart.png" class="h-[30px] w-[30px] ml-4" alt="">
+                <span id="totalHeart" class="font-extrabold">0</span>
+                <img  src="./assets/heart.png" class="h-[30px] w-[30px] ml-4" alt="">
             </div>
             <div class="h-[52px] w-[125px] ml-4 flex flex-row justify-center items-center  bg-[#41ff6b1a] rounded-3xl">
-                <span class="font-extrabold">100</span>
+                <span class="callPoint font-extrabold">100</span>
                 <img src="./assets/coin.png" class="h-[30px] w-[30px] ml-4" alt="">
             </div>
             <div class="h-[52px] w-[125px] ml-4 flex flex-row justify-center items-center bg-[#00A63c] rounded-3xl">
-                <p class="text-white font-[600]"><span>0</span> Copy</p>
+                <p class="copyCount text-white font-[600]"><span>0</span> Copy</p>
             </div>
         </div>
     </div>
@@ -49,14 +49,305 @@ flex-col ">
     </div>
 </section>
 
+<section class="bg-[#f5fff6] h-auto w-auto mx-auto lg:px-7 lg:py-6 px-3 py-2">
+        <div class="grid grid-cols-1 lg:grid-cols-4 lg:grid-rows-3 gap-4 lg:gap-3">
+
+            <div class="flex flex-col px-4 py-4 lg:px-8 lg:py-8 shadow-xl rounded-lg h-auto w-auto">
+                <!-- heart logo -->
+                <div class="flex flex-row justify-between items-center">
+                    <img class="bg-[#ffe3e2] rounded-lg p-4 h-[60px] w-[60px]" src="./assets/emergency.png" alt="">
+                    <button class="heartPress"><i class="fa-regular fa-heart"></i></button>
+                </div>
+               <section>
+                 <!-- text -->
+                <div>
+                    <div class="mt-5">
+                        <h2 class="text-lg font-semibold">জাতীয় জরুরি সেবা</h2>
+                        <p class=" CallText text-gray-600">National Emergency</p>
+                    </div>
+                    <div class="mt-5">
+                        <h2 class="copyNum text-lg font-semibold">999</h2>
+                        <button class="text-gray-600 bg-[#5c5c5c2e] w-21 rounded-lg">সার্বজনীন</button>
+                    </div>
+                </div>
+                <!-- button -->
+                <div class="flex flex-col sm:flex-row justify-between items-center mt-5 gap-2">
+                    <div  class="copyBtn border-1 border-gray-400 lg:w-[50%] w-full px-2 py-2 rounded-lg text-center"><i class="fa-solid fa-copy"></i> Copy</div>
+                    <div class="callbtn bg-[#00A63E] lg:w-[50%] w-full px-2 py-2 rounded-lg text-center text-white"><i class="fa-solid fa-phone"></i> Call</div>
+                </div>
+               </section>
+
+            </div>
+
+            <div class="flex flex-col px-4 py-4 lg:px-8 lg:py-8 shadow-xl rounded-lg h-auto w-auto">
+                <!-- heart logo -->
+                <div class="flex flex-row justify-between items-center">
+                    <img class="bg-[#00000026] rounded-lg p-4 h-[60px] w-[60px]" src="./assets/police.png" alt="">
+                    <button class="heartPress"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <!-- text -->
+                <div>
+                    <div class="mt-5">
+                        <h2 class="text-lg font-semibold">পুলিশ</h2>
+                        <p class="CallText text-gray-600">Police</p>
+                    </div>
+                    <div class="mt-5">
+                        <h2 class="copyNum text-lg font-semibold">999</h2>
+                        <button class="text-gray-600 bg-[#5c5c5c2e] w-21 rounded-lg">পুলিশ</button>
+                    </div>
+                </div>
+                <!-- button -->
+                <div class="flex flex-col sm:flex-row justify-between items-center mt-5 gap-2">
+                    <div  class="copyBtn border-1 border-gray-400 lg:w-[50%] w-full px-2 py-2 rounded-lg text-center"><i class="fa-solid fa-copy"></i> Copy</div>
+                    <div class="callbtn bg-[#00A63E] lg:w-[50%] w-full px-2 py-2 rounded-lg text-center text-white"><i class="fa-solid fa-phone"></i> Call</div>
+                </div>
+            </div>
+
+            <div class="flex flex-col px-4 py-4 lg:px-8 lg:py-8 shadow-xl rounded-lg h-auto w-auto">
+                <!-- heart logo -->
+                <div class="flex flex-row justify-between items-center">
+                    <img class="bg-[#ffe3e2] rounded-lg p-4 h-[60px] w-[60px]" src="./assets/fire-service.png" alt="">
+                    <button class="heartPress"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <!-- text -->
+                <div>
+                    <div class="mt-5">
+                        <h2 class="text-lg font-semibold">ফায়ার সার্ভিস</h2>
+                        <p class="CallText text-gray-600">Fire Service</p>
+                    </div>
+                    <div class="mt-5">
+                        <h2 class="copyNum text-lg font-semibold">999</h2>
+                        <button class="text-gray-600 bg-[#5c5c5c2e] w-21 rounded-lg">ফায়ার</button>
+                    </div>
+                </div>
+                <!-- button -->
+                <div class="flex flex-col sm:flex-row justify-between items-center mt-5 gap-2">
+                    <div  class="copyBtn border-1 border-gray-400 lg:w-[50%] w-full px-2 py-2 rounded-lg text-center"><i class="fa-solid fa-copy"></i> Copy</div>
+                    <div class="callbtn bg-[#00A63E] lg:w-[50%] w-full px-2 py-2 rounded-lg text-center text-white"><i class="fa-solid fa-phone"></i> Call</div>
+                </div>
+            </div>
+
+            <div class="lg:col-start-1 lg:row-start-2 flex flex-col px-4 py-4 lg:px-8 lg:py-8 shadow-xl rounded-lg h-auto w-auto">
+                <!-- heart logo -->
+                <div class="flex flex-row justify-between items-center">
+                    <img class="bg-[#ffe3e2] rounded-lg p-4 h-[60px] w-[60px]" src="./assets/ambulance.png" alt="">
+                    <button class="heartPress"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <!-- text -->
+                <div>
+                    <div class="mt-5">
+                        <h2 class="text-lg font-semibold">অ্যাম্বুলেন্স</h2>
+                        <p class="CallText text-gray-600">Ambulance</p>
+                    </div>
+                    <div class="mt-5">
+                        <h2 class="copyNum text-lg font-semibold">1994-999999</h2>
+                        <button class="text-gray-600 bg-[#5c5c5c2e] w-21 rounded-lg">স্বাস্থ্য</button>
+                    </div>
+                </div>
+                <!-- button -->
+                <div class="flex flex-col sm:flex-row justify-between items-center mt-5 gap-2">
+                    <div  class="copyBtn border-1 border-gray-400 lg:w-[50%] w-full px-2 py-2 rounded-lg text-center"><i class="fa-solid fa-copy"></i> Copy</div>
+                    <div class="callbtn bg-[#00A63E] lg:w-[50%] w-full px-2 py-2 rounded-lg text-center text-white"><i class="fa-solid fa-phone"></i> Call</div>
+                </div>
+            </div>
+
+            <div class="lg:col-start-2 lg:row-start-2 flex flex-col px-4 py-4 lg:px-8 lg:py-8 shadow-xl rounded-lg h-auto w-auto">
+                <!-- heart logo -->
+                <div class="flex flex-row justify-between items-center">
+                    <img class="bg-[#ffe3e2] rounded-lg p-4 h-[60px] w-[60px]" src="./assets/emergency.png" alt="">
+                    <button class="heartPress"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <!-- text -->
+                <div>
+                    <div class="mt-5">
+                        <h2 class="text-lg font-semibold">নারী ও শিশু সহায়তা</h2>
+                        <p class="CallText text-gray-600">Women & Child Helpline</p>
+                    </div>
+                    <div class="mt-5">
+                        <h2 class="copyNum text-lg font-semibold">109</h2>
+                        <button class="text-gray-600 bg-[#5c5c5c2e] w-21 rounded-lg">সহায়তা</button>
+                    </div>
+                </div>
+                <!-- button -->
+                <div class="flex flex-col sm:flex-row justify-between items-center mt-5 gap-2">
+                    <div  class="copyBtn border-1 border-gray-400 lg:w-[50%] w-full px-2 py-2 rounded-lg text-center"><i class="fa-solid fa-copy"></i> Copy</div>
+                    <div class="callbtn bg-[#00A63E] lg:w-[50%] w-full px-2 py-2 rounded-lg text-center text-white"><i class="fa-solid fa-phone"></i> Call</div>
+                </div>
+            </div>
+
+            <div class="lg:col-start-3 lg:row-start-2 flex flex-col px-4 py-4 lg:px-8 lg:py-8 shadow-xl rounded-lg h-auto w-auto">
+                <!-- heart logo -->
+                <div class="flex flex-row justify-between items-center">
+                    <img class="bg-[#ffe3e2] rounded-lg p-4 h-[60px] w-[60px]" src="./assets/emergency.png" alt="">
+                    <button class="heartPress"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <!-- text -->
+                <div>
+                    <div class="mt-5">
+                        <h2 class="text-lg font-semibold">দুদক</h2>
+                        <p class="CallText text-gray-600">Anti-Corruption</p>
+                    </div>
+                    <div class="mt-5">
+                        <h2 class="copyNum text-lg font-semibold">106</h2>
+                        <button class="text-gray-600 bg-[#5c5c5c2e] w-21 rounded-lg">সরকারি</button>
+                    </div>
+                </div>
+                <!-- button -->
+                <div class="flex flex-col sm:flex-row justify-between items-center mt-5 gap-2">
+                    <div  class="copyBtn border-1 border-gray-400 lg:w-[50%] w-full px-2 py-2 rounded-lg text-center"><i class="fa-solid fa-copy"></i> Copy</div>
+                    <div class="callbtn bg-[#00A63E] lg:w-[50%] w-full px-2 py-2 rounded-lg text-center text-white"><i class="fa-solid fa-phone"></i> Call</div>
+                </div>
+            </div>
+
+            <div class="lg:col-start-1 lg:row-start-3 flex flex-col px-4 py-4 lg:px-8 lg:py-8 shadow-xl rounded-lg h-auto w-auto">
+                <!-- heart logo -->
+                <div class="flex flex-row justify-between items-center">
+                    <img class="bg-[#ffe3e2] rounded-lg p-4 h-[60px] w-[60px]" src="./assets/emergency.png" alt="">
+                    <button class="heartPress"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <!-- text -->
+                <div>
+                    <div class="mt-5">
+                        <h2 class="text-lg font-semibold">বিদ্যুৎ বিভ্রাট</h2>
+                        <p class="CallText text-gray-600">Electricity Outage</p>
+                    </div>
+                    <div class="mt-5">
+                        <h2 class="copyNum text-lg font-semibold">16216</h2>
+                        <button class="text-gray-600 bg-[#5c5c5c2e] w-21 rounded-lg">বিদ্যুৎ</button>
+                    </div>
+                </div>
+                <!-- button -->
+                <div class="flex flex-col sm:flex-row justify-between items-center mt-5 gap-2">
+                    <div  class="copyBtn border-1 border-gray-400 lg:w-[50%] w-full px-2 py-2 rounded-lg text-center"><i class="fa-solid fa-copy"></i> Copy</div>
+                    <div class="callbtn bg-[#00A63E] lg:w-[50%] w-full px-2 py-2 rounded-lg text-center text-white"><i class="fa-solid fa-phone"></i> Call</div>
+                </div>
+            </div>
+
+            <div class="lg:col-start-2 lg:row-start-3 flex flex-col px-4 py-4 lg:px-8 lg:py-8 shadow-xl rounded-lg h-auto w-auto">
+                <!-- heart logo -->
+                <div class="flex flex-row justify-between items-center">
+                    <img class="bg-[#ffe3e2] rounded-lg p-4 h-[60px] w-[60px]" src="./assets/brac.png" alt="">
+                    <button class="heartPress"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <!-- text -->
+                <div>
+                    <div class="mt-5">
+                        <h2 class="text-lg font-semibold">ব্র্যাক</h2>
+                        <p class="CallText text-gray-600">Brac</p>
+                    </div>
+                    <div class="mt-5">
+                        <h2 class="copyNum text-lg font-semibold">16445</h2>
+                        <button class="text-gray-600 bg-[#5c5c5c2e] w-21 rounded-lg">এনজিও</button>
+                    </div>
+                </div>
+                <!-- button -->
+                <div class="flex flex-col sm:flex-row justify-between items-center mt-5 gap-2">
+                    <div  class="copyBtn border-1 border-gray-400 lg:w-[50%] w-full px-2 py-2 rounded-lg text-center"><i class="fa-solid fa-copy"></i> Copy</div>
+                    <div class="callbtn bg-[#00A63E] lg:w-[50%] w-full px-2 py-2 rounded-lg text-center text-white"><i class="fa-solid fa-phone"></i> Call</div>
+                </div>
+            </div>
+
+            <div class="lg:col-start-3 lg:row-start-3 flex flex-col px-4 py-4 lg:px-8 lg:py-8 shadow-xl rounded-lg h-auto w-auto">
+                <!-- heart logo -->
+                <div class="flex flex-row justify-between items-center">
+                    <img class="bg-[#ffe3e2] rounded-lg p-4 h-[60px] w-[60px]" src="./assets/Bangladesh-Railway.png" alt="">
+                    <button class="heartPress"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <!-- text -->
+                <div>
+                    <div class="mt-5">
+                        <h2 class="text-lg font-semibold">বাংলাদেশ রেলওয়ে</h2>
+                        <p class="CallText text-gray-600">Bangladesh Railway</p>
+                    </div>
+                    <div class="mt-5">
+                        <h2 class="copyNum text-lg font-semibold">163</h2>
+                        <button class="text-gray-600 bg-[#5c5c5c2e] w-21 rounded-lg">পরিবহন</button>
+                    </div>
+                </div>
+                <!-- button -->
+                <div class="flex flex-col sm:flex-row justify-between items-center mt-5 gap-2">
+                    <div  class="copyBtn border-1 border-gray-400 lg:w-[50%] w-full px-2 py-2 rounded-lg text-center"><i class="fa-solid fa-copy"></i> Copy</div>
+                    <div class="callbtn bg-[#00A63E] lg:w-[50%] w-full px-2 py-2 rounded-lg text-center text-white"><i class="fa-solid fa-phone"></i> Call</div>
+                </div>
+            </div>
+
+            <!-- History -->
+            <div class="lg:row-span-3 lg:col-start-4 lg:row-start-1 shadow-xl rounded-lg h-auto w-auto px-4 py-4 lg:px-8 lg:py-4">
+                <div class="flex flex-row justify-between items-center">
+                    <h1 class="text-lg font-medium flex-col"><i class="fa-regular fa-clock mr-2"></i>Call History</h1>
+                    <button class="bg-[#00A63E] text-white rounded-xl w-[80px] h-9">Clear</button>
+                </div>
+                
+            </div>
+        </div>
+</section>
 
 
 
 
 
 
+<script>
+    let totalCount = 0;
+    let copyCount = 0;
+    
+    document.querySelectorAll('.heartPress').forEach(button => {
+        button.addEventListener("click", () => {
+            totalCount++;
+            document.getElementById("totalHeart").innerText = totalCount;
+        });
+    });
+
+    // document.querySelectorAll('.copyBtn').forEach(button => {
+    //     button.addEventListener("click", () => {
+    //         copyCount++;
+    //         document.querySelector('.copyCount span').innerText = copyCount;
+
+    //         const Number = button.parentElement.parentElement.querySelector('.copyNum').innerText;
+    //         alert(`Copied: ${Number}`);
+
+    //     });
+    // });
+    
+    // Call function
+
+    
+         document.querySelectorAll('.callbtn').forEach(button => {
+            button.addEventListener("click", () => {
+
+               
+
+                const newCallPoint = parseInt(document.getElementsByClassName("callPoint")[0].innerText) - 20;
+                if(newCallPoint >= 0){
+                    document.getElementsByClassName("callPoint")[0].innerText = newCallPoint;
+                }else{
+                    document.getElementsByClassName("callPoint")[0].innerText = 0;
+                }
+                
+
+                if(newCallPoint > 20){
+                    const callText = button.parentElement.parentElement.querySelector('.CallText').innerText;
+                    const Number = button.parentElement.parentElement.querySelector('.copyNum').innerText;
+                      alert(`calling... ${callText} - ${Number}`);
+
+                }
+                else{
+                   alert("You have insufficient call points.");
+               }
+            });
+
+        });
+    
 
 
+
+
+    
+
+
+
+
+</script>
 
 
 
