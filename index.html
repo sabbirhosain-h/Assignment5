@@ -275,84 +275,21 @@ flex-col ">
             <div class="lg:row-span-3 lg:col-start-4 lg:row-start-1 shadow-xl rounded-lg h-auto w-auto px-4 py-4 lg:px-8 lg:py-4">
                 <div class="flex flex-row justify-between items-center">
                     <h1 class="text-lg font-medium flex-col"><i class="fa-regular fa-clock mr-2"></i>Call History</h1>
-                    <button class="bg-[#00A63E] text-white rounded-xl w-[80px] h-9">Clear</button>
+                    <button id="Clear" class="bg-[#00A63E] text-white rounded-xl w-[80px] h-9">Clear</button>
                 </div>
+                <!-- History Items -->
+                <div class="callHistory">
+                   
+               </div>
 
-                
-            </div>
+
+
+
         </div>
 </section>
 
 
-
-
-
-
-<script>
-    let totalCount = 0;
-    let copyCount = 0;
-     
-    // heart press counter
-    document.querySelectorAll('.heartPress').forEach(button => {
-        button.addEventListener("click", () => {
-            totalCount++;
-            document.getElementById("totalHeart").innerText = totalCount;
-        });
-    });
-
-    // Copy function
-    document.querySelectorAll('.copyBtn').forEach(button => {
-        button.addEventListener("click", () => {
-            
-                button.parentElement.querySelector('.copyBtn').innerHTML = "Copied..";
-            
-            copyCount++;
-            document.querySelector('.copyCount span').innerText = copyCount;
-
-            const Number = parseInt(button.parentElement.parentElement.querySelector('.copyNum').innerText);
-            navigator.clipboard.writeText(Number);
-
-
-        });
-    });
-    
-    // Call function
-         document.querySelectorAll('.callbtn').forEach(button => {
-                button.addEventListener("click", () => {
-                    const newCallPoint = parseInt(document.getElementsByClassName("callPoint")[0].innerText) - 20;
-             
-                    if(newCallPoint >= 0){
-                    document.getElementsByClassName("callPoint")[0].innerText = newCallPoint;
-                    }else{
-                    document.getElementsByClassName("callPoint")[0].innerText = 0;
-                   }
-
-                      if(newCallPoint > 20){
-                         const callText = button.parentElement.parentElement.querySelector('.CallText').innerText;
-                         const Number = button.parentElement.parentElement.querySelector('.copyNum').innerText;
-                         alert(`calling... ${callText} - ${Number}`);
-                      }
-                      else{
-                      alert("You have insufficient call points.");
-                      }
-                   // add to the history
-
-
-              });
-        });
-    
-
-
+<script src="./script.js">
 </script>
-
-
-
-
-
-
-
-
-
-
 </body>
 </html>
