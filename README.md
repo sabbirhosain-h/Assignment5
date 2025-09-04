@@ -5,7 +5,7 @@
     querySelectorAll selects all elements that match a specified CSS selector.
 
 ## How do you create and insert a new element into the DOM?
-  => There are several ways to create new elements and insert them into the DOM. We can use document.cresteElement(). It can be a div or even a 
+  => There are several ways to create new elements and insert them into the DOM. We can use document.CreateElement(). It can be a div or even a 
      whole section, then we must append that div to our desired parent Element.
 
 ## What is Event Bubbling and how does it work?
